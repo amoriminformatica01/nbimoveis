@@ -1,0 +1,20 @@
+CRITICAL - 2022-04-02 17:40:11 --> Invalid file: site.php
+#0 C:\wamp64\www\nbimoveis\application\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('site.php')
+#1 C:\wamp64\www\nbimoveis\application\system\Common.php(1089): CodeIgniter\View\View->render('site', Array, true)
+#2 C:\wamp64\www\nbimoveis\application\app\Controllers\Home.php(10): view('site')
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#8 {main}
+CRITICAL - 2022-04-02 17:40:14 --> Invalid file: site.php
+#0 C:\wamp64\www\nbimoveis\application\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('site.php')
+#1 C:\wamp64\www\nbimoveis\application\system\Common.php(1089): CodeIgniter\View\View->render('site', Array, true)
+#2 C:\wamp64\www\nbimoveis\application\app\Controllers\Home.php(10): view('site')
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#8 {main}
