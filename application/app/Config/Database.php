@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'username' => 'arteevit_artevit',
+        'password' => '@asj20508',
+        'database' => 'arteevit_nbimoveis',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
