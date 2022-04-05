@@ -48,45 +48,44 @@
 <div class="container p-3">
     <?php if (!$imoveis) : ?>
         <h1 class="text-center">Não existe imóveis cadastrados</h1>
-    <?php else: ?>
-    <h1 class="text-center">Destaques</h1>
-    <div class="container p-3">
-        <div class="row">
+    <?php else : ?>
+        <h1 class="text-center">Destaques</h1>
+        <div class="container p-3">
+            <div class="row">
 
-            <?php foreach ($imoveis as $imovel) : ?>
-                <div class="col-md-4 p-3">
-                    <img class="img-fluid" src="<?= $imovel['imagem'] ?>" alt="">
-                    <div class="container-fluid">
+                <?php foreach ($imoveis as $imovel) : ?>
+                    <div class="col-md-4 p-3">
+                        <img class="img-fluid" src="<?= $imovel['imagem'] ?>" alt="">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <h5 class="text-right">Código <?= $imovel['codigo'] ?></h5>
+                                </div>
+                                <div class="col-md-5">
+                                    <h5 class="text-center text-danger">R$ <?= $imovel['preco'] ?></h5>
+                                </div>
+                                <div class="col-md-12">
+                                    <h4 class="text-right"><?= $imovel['bairro'] ?></h4>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
-                            <div class="col-md-7">
-                                <h5 class="text-right">Código <?= $imovel['codigo'] ?></h5>
+                            <div class="col-md-3 border border-1">
+                                <p>Área <?= $imovel['tamanho'] ?> m²</p>
                             </div>
-                            <div class="col-md-5">
-                                <h5 class="text-center text-danger">R$ <?= $imovel['preco'] ?></h5>
+                            <div class="col-md-3 border border-1">
+                                <p>Quartos <?= $imovel['quartos'] ?></p>
                             </div>
-                            <div class="col-md-12">
-                                <h4 class="text-right"><?= $imovel['bairro'] ?></h4>
+                            <div class="col-md-3 border border-1">
+                                <p>Banheiros <?= $imovel['banheiros'] ?></p>
+                            </div>
+                            <div class="col-md-3 border border-1">
+                                <p>Vagas <?= $imovel['vagas'] ?></p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-3 border border-1">
-                            <p>Área <?= $imovel['tamanho'] ?> m²</p>
-                        </div>
-                        <div class="col-md-3 border border-1">
-                            <p>Quartos <?= $imovel['quartos'] ?></p>
-                        </div>
-                        <div class="col-md-3 border border-1">
-                            <p>Banheiros <?= $imovel['banheiros'] ?></p>
-                        </div>
-                        <div class="col-md-3 border border-1">
-                            <p>Vagas <?= $imovel['vagas'] ?></p>
-                        </div>
-                    </div>
-                </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
             <?php endif; ?>
+            </div>
         </div>
-    </div>
-</div>
 </div>

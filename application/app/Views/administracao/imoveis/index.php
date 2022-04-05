@@ -39,27 +39,49 @@
             </button>
           </div>
         </div>
-        <h2>Section title</h2>
         <div class="table-responsive">
           <table class="table table-striped table-sm">
             <thead>
+            <?php if(!$imoveis ):?>
+              <h1 class="text-center">Não existe Imóveis Cadastrados</h1>
+              <h4 class="text-center">deseja adiconar um <a href="<?=site_url('');?>imoveis\novo" class="text-danger">novo</a> cadastro</h4>
+              
+            <?php else:?>
               <tr>
-                <th>#</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
+                <th>Id</th>
+                <th>Descrição do Imóvel</th>
+                <th>Categoria</th>
+                <th>Codigo</th>
+                <th>Tipo</th>
+                <th>Preço</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Situação</th>
+                <th>Observação</th>
+                <th>Data de Cadastro</th>
+                <th colspan="2"><a href="<?=site_url('');?>imoveis\novo" class="btn btl-lg btn-success">novo Cadastro</a></th>
               </tr>
             </thead>
+            <?php foreach($imoveis as $imovel):?>
             <tbody>
               <tr>
-                <td>1,001</td>
-                <td>Lorem</td>
-                <td>ipsum</td>
-                <td>dolor</td>
-                <td>sit</td>
+                <td><?=$imovel['id']?></td>
+                <td><?=$imovel['descricao']?></td>
+                <td><?=$imovel['categoria']?></td>
+                <td><?=$imovel['codigo']?></td>
+                <td><?=$imovel['tipo']?></td>
+                <td><?=$imovel['preco']?></td>
+                <td><?=$imovel['bairro']?></td>
+                <td><?=$imovel['cidade']?></td>
+                <td><?=$imovel['situacao']?></td>
+                <td><?=$imovel['observacao']?></td>
+                <td><?=$imovel['created_at']?></td>
+                <td><a href="<?=site_url('');?>imoveis\alterar" class="btn btn-warning">Alterar</a>
+                <a href="<?=site_url('');?>imoveis\excluir" class="btn btn-danger">Excluir</a></td>
               </tr>
             </tbody>
+            <?php endforeach;?>
+            <?php endif;?>
           </table>
         </div>
       </main>

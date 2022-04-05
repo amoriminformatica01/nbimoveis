@@ -18,6 +18,7 @@ class Dashboard extends ResourceController
         echo view('template/footer');
     }
     
+
     /**
      * Return the properties of a resource object
      *
