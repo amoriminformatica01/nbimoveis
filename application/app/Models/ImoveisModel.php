@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class ImoveisModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'imoveis';
+    protected $table            = '';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
@@ -19,7 +19,13 @@ class ImoveisModel extends Model
         'categoria',
         'codigo',
         'tipo',
-        'imagem',
+        'imagem_principal',
+        'imagem_1',
+        'imagem_2',
+        'imagem_3',
+        'imagem_4',
+        'imagem_5',
+        'imagem_6',
         'preco',
         'bairro',
         'cidade',
