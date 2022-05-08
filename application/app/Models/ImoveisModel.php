@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class ImoveisModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = '';
+    protected $table            = 'imoveis';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;

@@ -1,8 +1,10 @@
 <?php
 
+
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
+use App\Models\ImoveisModel;
 
 class Dashboard extends ResourceController
 {
@@ -13,11 +15,40 @@ class Dashboard extends ResourceController
      */
     public function index()
     {
-        echo view('template/header');
-        echo view('administracao/dashboard/index');
-        echo view('template/footer');
+        //if (!session()->has('email')) {
+            //return redirect()->to(base_url('auth'));
+       // }
+
+        $locacao = new ImoveisModel();
+        $venda = new ImoveisModel();
+        $casa = new ImoveisModel();
+        $apartamento = new ImoveisModel();
+        $condominio = new ImoveisModel();
+        $loja = new ImoveisModel();
+        $terreno = new ImoveisModel();
+
+        $locacao->where('categoria', 'Locação');
+        $venda->where('categoria', 'Venda');
+        $casa->where('tipo', 'Casa');
+        $apartamento->where('tipo', 'Apartamento');
+        $condominio->where('tipo', 'Condomínio');
+        $loja->where('tipo', 'Loja');
+        $terreno->where('tipo', 'Terreno');
+
+        $data = [
+            'locacao' => $locacao->findAll(),
+            'venda' => $venda->findAll(),
+            'casa' => $casa->findAll(),
+            'apartamento' => $apartamento->findAll(),
+            'condominio' => $condominio->findAll(),
+            'loja' => $loja->findAll(),
+            'terreno' => $terreno->findAll()
+        ];
+        echo view('administracao/template/header');
+        echo view('administracao/dashboard/index', $data);
+        echo view('administracao/template/footer');
     }
-    
+
 
     /**
      * Return the properties of a resource object

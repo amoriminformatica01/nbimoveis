@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>404 Page Not Found</title>
+	<title>404 Pagina Não Encontrada</title>
 
 	<style>
 		div.logo {
@@ -70,13 +70,13 @@
 </head>
 <body>
 	<div class="wrap">
-		<h1>404 - File Not Found</h1>
+		<h1>404 - Pagina Não Encontrada</h1>
 
 		<p>
 			<?php if (! empty($message) && $message !== '(null)') : ?>
 				<?= nl2br(esc($message)) ?>
 			<?php else : ?>
-				Sorry! Cannot seem to find the page you were looking for.
+				Desculpe! Não foi possível encontrar a página que você estava procurando.
 			<?php endif ?>
 		</p>
 	</div>

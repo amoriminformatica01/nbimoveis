@@ -9,31 +9,39 @@
     var ctx = document.getElementById('myChart')
         // eslint-disable-next-line no-unused-vars
     var myChart = new Chart(ctx, {
-        type: 'line',
+        type: 'bar',
         data: {
             labels: [
-                'Locados',
-                'Monday',
-                'Tuesday',
-                'Wednesday',
-                'Thursday',
-                'Friday',
-                'Saturday'
+                'Locação',
+                'Venda',
+                'Casa',
+                'Apartamento',
+                'Condomínio',
+                'Loja',
+                'Terreno'
             ],
             datasets: [{
                 data: [
-                    15339,
-                    21345,
-                    18483,
-                    24003,
-                    23489,
-                    24092,
-                    12034
+                    locacao,
+                    venda,
+                    casa,
+                    apartamento,
+                    loja,
+                    terreno
+
                 ],
                 lineTension: 0,
-                backgroundColor: 'transparent',
+                backgroundColor: [
+                    'red',
+                    'blue',
+                    'green',
+                    'silver',
+                    'black',
+                    'yellow',
+                    'orange'
+                ],
                 borderColor: '#007bff',
-                borderWidth: 4,
+                borderWidth: 2,
                 pointBackgroundColor: '#007bff'
             }]
         },
@@ -41,7 +49,7 @@
             scales: {
                 yAxes: [{
                     ticks: {
-                        beginAtZero: false
+                        beginAtZero: true
                     }
                 }]
             },

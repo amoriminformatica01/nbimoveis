@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'https://nbimoveis.arteevit.com.br/';
+    public $baseURL = 'http://localhost:8080/';
 
     /**
      * --------------------------------------------------------------------------
@@ -69,7 +69,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $defaultLocale = 'br';
+    public $defaultLocale = 'pt-br';
 
     /**
      * --------------------------------------------------------------------------
@@ -96,7 +96,7 @@ class App extends BaseConfig
      *
      * @var string[]
      */
-    public $supportedLocales = ['en'];
+    public $supportedLocales = ['pt-br'];
 
     /**
      * --------------------------------------------------------------------------
