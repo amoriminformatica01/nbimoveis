@@ -12,4 +12,4 @@ Site Imobiliário
 
 <img src="/img/site/nb-logo.png" width="80px">
 <p>Painel ADM</p>
-<img src="/img/painel.jpg" width="80px">
+<img src="/img/painel.jpg" width="100%">
