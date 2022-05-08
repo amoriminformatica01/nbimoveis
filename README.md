@@ -14,4 +14,4 @@ Site Imobiliário
 <p>Painel ADM</p>
 <img src="/img/painel.jpg" width="80%">
 <p>Cadastro</p>
-<img src="/img/painel.jpg" width="80%">
+<img src="/img/cadastro.jpg" width="80%">
