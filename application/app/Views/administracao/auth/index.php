@@ -66,10 +66,10 @@
              <h1 class="h3 mb-3 fw-normal">Login</h1>
 
              <div class="form-floating p-3">
-                 <input type="email" class="form-control" id="floatingInput" placeholder="SeuEmail@example.com">
+                 <input type="email" class="form-control" id="floatingInput" name="email" placeholder="SeuEmail@example.com">
              </div>
              <div class="form-floating p-3">
-                 <input type="password" class="form-control" id="floatingPassword" placeholder="Sua Senha">
+                 <input type="password" class="form-control" id="floatingPassword" name="senha" placeholder="Sua Senha">
              </div>
 
              <div class="checkbox mb-3">
@@ -78,6 +78,6 @@
                  </label>
              </div>
              <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
-             <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+             <p class="mt-5 mb-3 text-muted">&copy; NB Imóveis <?=date('Y')?></p>
          </form>
      </main>

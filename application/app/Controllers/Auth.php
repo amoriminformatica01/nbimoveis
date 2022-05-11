@@ -10,10 +10,9 @@ class Auth extends BaseController
 {
     public function index()
     {
-        //if (session()->has('email')) {
-            //return redirect()->to(base_url('auth'));
-       // }
-
+        if (!is_null(session()->get('loggedUser'))) {
+            return redirect()->to('dashboard');
+          }
         echo view('administracao/template/header');
         echo view('administracao/auth/index');
         echo view('administracao/template/footer');
@@ -22,9 +21,9 @@ class Auth extends BaseController
     {
         if ($this->request->getMethod() === 'post') {
             $email = $this->request->getPost('email');
-            $password = $this->request->getPost('password');
+            $senha = $this->request->getPost('senha');
 
-            if (empty($email) && empty($password)) {
+            if (empty($email) && empty($senha)) {
                 echo json_encode([
                     'success' => false,
                     'message' => 'Informe o seu email e a sua senha'
@@ -34,7 +33,7 @@ class Auth extends BaseController
                     'success' => false,
                     'message' => 'Informe o seu email'
                 ]);
-            } elseif (empty($password)) {
+            } elseif (empty($senha)) {
                 echo json_encode([
                     'success' => false,
                     'message' => 'Informe a sua senha'
@@ -50,7 +49,7 @@ class Auth extends BaseController
                         'message' => 'Usuário e/ou senha incorreto(s)'
                     ]);
                 } else {
-                    $checkPassword = Hash::check($password, $userInfo['password']);
+                    $checkPassword = Hash::check($senha, $userInfo['senha']);
 
                     if (!$checkPassword) {
                         echo json_encode([
@@ -60,8 +59,8 @@ class Auth extends BaseController
                     } else {
                         session()->set('loggedUser', $userInfo['id']);
                         session()->set('email', $email);
-                        session()->set('first_name', $userInfo['first_name']);
-                        session()->set('last_name', $userInfo['last_name']);
+                        session()->set('nome', $userInfo['nome']);
+                        session()->set('sobrenome', $userInfo['sobrenome']);
                         echo json_encode([
                             'success' => true,
                             'message' => 'Login efetuado com sucesso, aguarde...'

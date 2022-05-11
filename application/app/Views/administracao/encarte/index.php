@@ -42,7 +42,7 @@
           <thead>
             <?php if (!$imoveis) : ?>
               <h1 class="text-center">Não existe Imóveis Cadastrados</h1>
-              <h4 class="text-center">deseja adiconar um <a href="<?= site_url(''); ?>encarte/new" class="text-danger">novo</a> cadastro</h4>
+              <h4 class="text-center">deseja adicionar um <a href="<?= site_url(''); ?>encarte/new" class="text-danger">novo</a> cadastro</h4>
             <?php else : ?>
               <tr>
                 <th>Id</th>
@@ -75,8 +75,8 @@
                 <td><?= $imovel['codigo'] ?></td>
                 <td><?= $imovel['observacao'] ?></td>
                 <td><?= $imovel['created_at'] ?></td>
-                <td><a href="<?= site_url(''); ?>encarte/show/<?= $imovel['id'] ?>" class="btn btn-warning"><i class="fa fa-edit"></a></td>
-                <td><a href="<?= site_url(''); ?>encarte/delete/<?= $imovel['id'] ?>" class="btn btn-danger"><i class="fa fa-remove"></i></a></td>
+                <td><a href="<?= site_url('encarte/show/');?><?= $imovel['id'] ?>" class="btn btn-warning"><i class="fa fa-edit"></a></td>
+                <td><a href="<?= site_url('encarte/delete/'); ?><?= $imovel['id'] ?>" class="btn btn-danger"><i class="fa fa-remove"></i></a></td>
               </tr>
             </tbody>
           <?php endforeach; ?>

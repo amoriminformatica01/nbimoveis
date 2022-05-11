@@ -17,9 +17,9 @@ class Encarte extends ResourceController
     public function index()
     {
 
-        //if (is_null(session()->get('logged_user'))) {
-        //return redirect()->to('admin');
-        //}
+        if (!session()->has('email')) {
+            return redirect()->to(base_url('auth'));
+       }
 
         $imoveis = new ImoveisModel();
         $data = [
@@ -38,6 +38,9 @@ class Encarte extends ResourceController
      */
     public function show($id = null)
     {
+        if (!session()->has('email')) {
+            return redirect()->to(base_url('auth'));
+       }
         $imoveis = new ImoveisModel();
         $tipos = new TipoModel();
         $categorias = new CategoriaModel();
@@ -59,6 +62,9 @@ class Encarte extends ResourceController
      */
     public function new()
     {
+        if (!session()->has('email')) {
+            return redirect()->to(base_url('auth'));
+       }
         $tipos = new TipoModel();
         $categorias = new CategoriaModel();
 
@@ -78,6 +84,9 @@ class Encarte extends ResourceController
      */
     public function create()
     {
+        if (!session()->has('email')) {
+            return redirect()->to(base_url('auth'));
+       }
         helper('form');
         if ($this->request->getMethod() === 'post') {
 
@@ -208,6 +217,9 @@ class Encarte extends ResourceController
      */
     public function update($id = true)
     {
+        if (!session()->has('email')) {
+            return redirect()->to(base_url('auth'));
+       }
         helper('form');
         if ($this->request->getMethod() === 'post') {
 

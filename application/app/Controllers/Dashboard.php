@@ -15,9 +15,9 @@ class Dashboard extends ResourceController
      */
     public function index()
     {
-        //if (!session()->has('email')) {
-            //return redirect()->to(base_url('auth'));
-       // }
+        if (!session()->has('email')) {
+            return redirect()->to(base_url('auth'));
+       }
 
         $locacao = new ImoveisModel();
         $venda = new ImoveisModel();

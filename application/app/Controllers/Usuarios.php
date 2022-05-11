@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\UserModel;
+use App\Libraries\Hash;
 use CodeIgniter\RESTful\ResourceController;
 
 class Usuarios extends ResourceController
@@ -17,7 +18,7 @@ class Usuarios extends ResourceController
         $UserModel = new UserModel();
 
         $data = [
-            'UserModel' => $UserModel->paginate(5),
+            'UserModel' => $UserModel->paginate(10),
             'pager' => $UserModel->pager,
         ];
         echo view('administracao/template/header',);
@@ -32,6 +33,9 @@ class Usuarios extends ResourceController
      */
     public function show($id = null)
     {
+        if (!session()->has('email')) {
+            return redirect()->to(base_url('auth'));
+       }
         $UserModel = new UserModel();
 
         $data = [
@@ -61,6 +65,9 @@ class Usuarios extends ResourceController
      */
     public function create()
     {
+        if (!session()->has('email')) {
+            return redirect()->to(base_url('auth'));
+       }
         helper('form');
         if ($this->request->getMethod() === 'post') {
             $nome = $this->request->getPost('nome');
@@ -75,7 +82,7 @@ class Usuarios extends ResourceController
                 'nome' => $nome,
                 'sobrenome' => $sobrenome,
                 'email' => $email,
-                'senha' => $senha,
+                'senha' => Hash::make($senha),
                 'telefone' => $telefone,
                 'observacao' => $observacao,
                 'created_at' => $created_at,
@@ -104,6 +111,9 @@ class Usuarios extends ResourceController
      */
     public function update($id = null)
     {
+        if (!session()->has('email')) {
+            return redirect()->to(base_url('auth'));
+       }
         helper('form');
         if ($this->request->getMethod() === 'post') {
             $nome = $this->request->getPost('nome');
@@ -137,6 +147,9 @@ class Usuarios extends ResourceController
      */
     public function delete($id = null)
     {
+        if (!session()->has('email')) {
+            return redirect()->to(base_url('auth'));
+       }
         $UserModel = new UserModel();
         $UserModel->delete($id);
         return redirect()->to(base_url('usuarios'));

@@ -191,3 +191,118 @@ CRITICAL - 2022-05-08 17:38:21 --> Arquivo inválido: administracao/usuarios/ind
 #6 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
 #8 {main}
+CRITICAL - 2022-05-08 19:42:46 --> syntax error, unexpected identifier "nome", expecting "," or ";"
+#0 C:\wamp64\www\nbimoveis\application\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\nbimoveis\application\system\Common.php(1089): CodeIgniter\View\View->render('administracao/u...', Array, true)
+#2 C:\wamp64\www\nbimoveis\application\app\Controllers\Usuarios.php(41): view('administracao/u...', Array)
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Usuarios->show('23')
+#4 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#5 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#8 {main}
+CRITICAL - 2022-05-08 19:42:47 --> syntax error, unexpected identifier "nome", expecting "," or ";"
+#0 C:\wamp64\www\nbimoveis\application\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\nbimoveis\application\system\Common.php(1089): CodeIgniter\View\View->render('administracao/u...', Array, true)
+#2 C:\wamp64\www\nbimoveis\application\app\Controllers\Usuarios.php(41): view('administracao/u...', Array)
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Usuarios->show('23')
+#4 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#5 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#8 {main}
+CRITICAL - 2022-05-08 19:42:52 --> syntax error, unexpected identifier "nome", expecting "," or ";"
+#0 C:\wamp64\www\nbimoveis\application\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\nbimoveis\application\system\Common.php(1089): CodeIgniter\View\View->render('administracao/u...', Array, true)
+#2 C:\wamp64\www\nbimoveis\application\app\Controllers\Usuarios.php(41): view('administracao/u...', Array)
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Usuarios->show('23')
+#4 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#5 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#8 {main}
+CRITICAL - 2022-05-08 20:11:03 --> Class "asj20508" not found
+#0 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Auth->index()
+#1 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#5 {main}
+CRITICAL - 2022-05-08 20:11:30 --> hash() expects at least 2 arguments, 1 given
+#0 C:\wamp64\www\nbimoveis\application\app\Controllers\Auth.php(22): hash('asj20508')
+#1 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Auth->index()
+#2 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#6 {main}
+CRITICAL - 2022-05-08 20:11:38 --> hash() expects at least 2 arguments, 0 given
+#0 C:\wamp64\www\nbimoveis\application\app\Controllers\Auth.php(22): hash()
+#1 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Auth->index()
+#2 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#6 {main}
+CRITICAL - 2022-05-08 20:14:08 --> password_hash(): Argument #2 ($algo) must be a valid password hashing algorithm
+#0 C:\wamp64\www\nbimoveis\application\app\Controllers\Auth.php(22): password_hash('asj20508', 'asj20508')
+#1 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Auth->index()
+#2 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#6 {main}
+CRITICAL - 2022-05-08 20:15:03 --> hash() expects at least 2 arguments, 1 given
+#0 C:\wamp64\www\nbimoveis\application\app\Controllers\Auth.php(17): hash('asj20508')
+#1 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Auth->index()
+#2 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#6 {main}
+CRITICAL - 2022-05-08 20:15:17 --> Call to undefined function PHPSTORM_META\map()
+#0 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Auth->index()
+#1 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#5 {main}
+CRITICAL - 2022-05-08 20:27:44 --> Call to undefined function asj20508()
+#0 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Auth->index()
+#1 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#5 {main}
+CRITICAL - 2022-05-08 20:46:09 --> hash(): Argument #1 ($algo) must be a valid hashing algorithm
+#0 C:\wamp64\www\nbimoveis\application\app\Controllers\Auth.php(17): hash('2y', 'asj20508')
+#1 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Auth->index()
+#2 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#6 {main}
+CRITICAL - 2022-05-08 20:47:02 --> hash(): Argument #1 ($algo) must be a valid hashing algorithm
+#0 C:\wamp64\www\nbimoveis\application\app\Controllers\Auth.php(17): hash('PASSWORD_BCRYPT', 'asj20508')
+#1 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Auth->index()
+#2 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#6 {main}
+CRITICAL - 2022-05-08 20:47:03 --> hash(): Argument #1 ($algo) must be a valid hashing algorithm
+#0 C:\wamp64\www\nbimoveis\application\app\Controllers\Auth.php(17): hash('PASSWORD_BCRYPT', 'asj20508')
+#1 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Auth->index()
+#2 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#6 {main}
+CRITICAL - 2022-05-08 20:52:52 --> password_hash(): Argument #2 ($algo) must be a valid password hashing algorithm
+#0 C:\wamp64\www\nbimoveis\application\app\Controllers\Auth.php(21): password_hash('nb123456', 'nb123456')
+#1 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(832): App\Controllers\Auth->index()
+#2 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\wamp64\www\nbimoveis\application\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\nbimoveis\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\nbimoveis\application\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\n...')
+#6 {main}

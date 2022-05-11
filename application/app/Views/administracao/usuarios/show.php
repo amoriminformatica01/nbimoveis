@@ -37,7 +37,7 @@
                     </button>
                 </div>
             </div>
-            <form action="<?= base_url() ?>/usuarios/update/<?=$UserModel['id']?>" method="POST" enctype="multipart/form-data">
+            <form action="<?= base_url('/usuarios/update/'.$UserModel['id']) ?>" method="POST" enctype="multipart/form-data">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
