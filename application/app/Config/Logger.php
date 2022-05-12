@@ -49,7 +49,7 @@ class Logger extends BaseConfig
      *
      * @var string
      */
-    public $dateFormat = 'Y-m-d H:i:s';
+    public $dateFormat = 'd-m-Y H:i:s';
 
     /**
      * --------------------------------------------------------------------------

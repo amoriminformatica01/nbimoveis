@@ -81,7 +81,7 @@
                     </div>
                     <div class="col-md-2 p-3">
                         <div class="form-group">
-                            <button class="btn btn-success" type="submit">Cadastrar</button>
+                            <button class="btn btn-success" type="submit">Atualizar</button>
                         </div>
                     </div>
                 </div>

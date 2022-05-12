@@ -33,8 +33,8 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'root',
-        'password' => '',
+        'username' => 'arteevit_arteevit',
+        'password' => '@asj20508',
         'database' => 'arteevit_nbimoveis',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',

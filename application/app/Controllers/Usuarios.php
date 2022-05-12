@@ -15,6 +15,9 @@ class Usuarios extends ResourceController
      */
     public function index()
     {
+        if (!session()->has('email')) {
+            return redirect()->to(base_url('auth'));
+       }
         $UserModel = new UserModel();
 
         $data = [
@@ -53,6 +56,9 @@ class Usuarios extends ResourceController
      */
     public function new()
     {
+        if (!session()->has('email')) {
+            return redirect()->to(base_url('auth'));
+       }
         echo view('administracao/template/header');
         echo view('administracao/usuarios/new');
         echo view('administracao/template/footer');

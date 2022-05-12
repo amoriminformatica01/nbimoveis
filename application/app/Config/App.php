@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost:8080/';
+    public $baseURL = 'https://nbimoveis.arteevit.com.br/';
 
     /**
      * --------------------------------------------------------------------------
@@ -83,7 +83,7 @@ class App extends BaseConfig
      *
      * @var bool
      */
-    public $negotiateLocale = false;
+    public $negotiateLocale = true;
 
     /**
      * --------------------------------------------------------------------------
@@ -231,7 +231,7 @@ class App extends BaseConfig
      *
      * @var bool
      */
-    public $sessionRegenerateDestroy = false;
+    public $sessionRegenerateDestroy = true;
 
     /**
      * --------------------------------------------------------------------------
@@ -283,7 +283,7 @@ class App extends BaseConfig
      *
      * @deprecated use Config\Cookie::$secure property instead.
      */
-    public $cookieSecure = false;
+    public $cookieSecure = true;
 
     /**
      * --------------------------------------------------------------------------

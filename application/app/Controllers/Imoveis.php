@@ -28,7 +28,7 @@ class Imoveis extends ResourceController
      *
      * @return mixed
      */
-    public function show($id=true)
+    public function show($id = null)
     {
         $imoveis = new ImoveisModel();
         $data = [

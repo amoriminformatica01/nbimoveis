@@ -42,7 +42,7 @@
           <thead>
             <?php if (!$imoveis) : ?>
               <h1 class="text-center">Não existe Imóveis Cadastrados</h1>
-              <h4 class="text-center">deseja adicionar um <a href="<?= site_url(''); ?>encarte/new" class="text-danger">novo</a> cadastro</h4>
+              <h4 class="text-center">deseja adicionar um <a href="<?= site_url('encarte/new'); ?>" class="text-danger">novo</a> cadastro</h4>
             <?php else : ?>
               <tr>
                 <th>Id</th>
@@ -57,7 +57,7 @@
                 <th>Código</th>
                 <th>Observação</th>
                 <th>Data de Cadastro</th>
-                <th colspan="2"><a href="<?= site_url(''); ?>encarte/new" class="text-center btn btn-success"><i class="fa fa-plus"></a></th>
+                <th colspan="2"><a href="<?= site_url('encarte/new'); ?>" class="text-center btn btn-success"><i class="fa fa-plus"></a></th>
               </tr>
           </thead>
           <?php foreach ($imoveis as $imovel) : ?>
@@ -71,7 +71,7 @@
                 <td><?= $imovel['bairro'] ?></td>
                 <td><?= $imovel['cidade'] ?></td>
                 <td><?= $imovel['situacao'] ?></td>
-                <td><img class="card" width="60px" height="40px" src="<?= base_url('') ?>/img/imoveis/<?= $imovel['imagem_principal'] ?>"></td>
+                <td><img class="card" width="60px" height="40px" src="<?= base_url('img/imoveis/') ?><?= $imovel['imagem_principal'] ?>"></td>
                 <td><?= $imovel['codigo'] ?></td>
                 <td><?= $imovel['observacao'] ?></td>
                 <td><?= $imovel['created_at'] ?></td>
